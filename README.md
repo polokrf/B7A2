@@ -5,7 +5,7 @@ A collaborative platform for software teams to report bugs, suggest features, an
 🌐 Live Links
 
 Live API: https://b7-a2-three.vercel.app/
-GitHub Repository: https://github.com/yourusername/devpulse
+
 ---
 📌 Features
 User Authentication with JWT
