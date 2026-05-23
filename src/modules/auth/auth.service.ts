@@ -24,6 +24,7 @@ const signupDB = async (payload:IUsers) => {
     return result
   } catch (error) {
     console.log(error)
+    throw error
   }
 }
 
@@ -61,6 +62,7 @@ const loginDB = async (payload:ILogin) => {
   return {token,user}
   } catch (error) {
     console.log(error)
+    throw error
   }
 }
 
