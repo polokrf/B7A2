@@ -4,7 +4,7 @@ import { auth } from "../midlewear/auth";
 
 const router = Router()
 
-router.post('/', auth(), issuesController.createIssues);
+router.post( '/', auth('contributor','maintainer'), issuesController.createIssues);
 router.get('/',issuesController.getIssues)
 router.get('/:id',issuesController.getSingleIssues)
 router.patch('/:id',auth('maintainer', 'contributor'),issuesController.updateIssues);
