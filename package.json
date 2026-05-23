@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "./src/server.ts",
   "scripts": {
+    "start": "node dist/server.mjs",
     "dev": "tsx watch ./src/server.ts",
+    "build": "tsup",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -25,6 +27,7 @@
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",
     "pg": "^8.21.0",
+    "tsup": "^8.5.1",
     "tsx": "^4.22.3"
   }
 }
